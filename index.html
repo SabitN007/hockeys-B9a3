@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom -->
+    <style>
+        .main-fonts {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="container mx-auto main-fonts">
+    <header>
+        <section>
+            <!-- navbar styles starts -->
+            <div class="navbar bg-base-100 relative">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li class="hover:bg-[#FF4240] hover:text-white rounded-md"><a>Home</a></li>
+                            <li class="hover:bg-[#FF4240]  hover:text-white"><a>About</a></li>
+                            <li class="hover:bg-[#FF4240]  hover:text-white"><a>Pages</a></li>
+                            <li class="hover:bg-[#FF4240]  hover:text-white"><a>Blog</a></li>
+                            <li class="hover:bg-[#FF4240]  hover:text-white"><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="text-3xl">Hockey <span class="text-[#FF4240] text-3xl">’</span>s</h2>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="hover:bg-[#FF4240] hover:text-white rounded-md"><a>Home</a></li>
+                        <li class="hover:bg-[#FF4240]  hover:text-white rounded-md"><a>About</a></li>
+                        <li class="hover:bg-[#FF4240]  hover:text-white rounded-md"><a>Pages</a></li>
+                        <li class="hover:bg-[#FF4240]  hover:text-white rounded-md"><a>Blog</a></li>
+                        <li class="hover:bg-[#FF4240]  hover:text-white"><a>Contact</a></li>
+                    </ul>
+                </div>
+                <button class="btn hidden btn-ghost btn-circle  lg:flex absolute right-20 mr-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <div class="navbar-end">
+                    <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
+                </div>
+            </div>
+        </section>
+        <!-- banner section -->
+        <section class="container mx-auto">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div class="bg-black">
+                    <h3>Meet all the heroes from the field</h2>
+                </div>
+            </div>
+            <!-- <div class="bg-black container lg:h-32 lg:w-2/4 rounded-lg ">
+                <h3 class="text-white">Meet all the heroes from the field</h2>
+            </div> -->
+        </section>
+    </header>
+    <!-- main section start -->
+    <main class="container mx-auto lg:mt-20 ">
+        <hr class="mb-10">
+        <div>
+            <h1 class="text-4xl text-center mb-6">Professional Hockeys Club</h1>
+            <p class="text-center">
+                Welcome to our site. We are glad to host you. In this case you will know about our Hockey club. <br> And also about our achievements.
+            </p>
+        </div>
+        <hr class="mt-10 ">
+        <div class="lg:mt-20 lg:flex lg:justify-between lg:mx-w-96">
+            <div class="radial-progress" style="--value:87;" role="progressbar">87%</div>
+            
+            <div class="radial-progress" style="--value:95;" role="progressbar">95%</div>
+            <div class="radial-progress" style="--value:90;" role="progressbar">90%</div>
+            <div class="radial-progress" style="--value:80;" role="progressbar">80%</div>
+
+           </div>
+       </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
